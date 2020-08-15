@@ -5,7 +5,8 @@
 @forward './scss/base/reset';
 @forward './scss/base/typography';
 @forward './scss/base/utilities';
-// @forward './scss/components';
+@forward './scss/components/button';
+@forward './scss/components/social-icons';
 @forward './scss/layout/footer';
 @forward './scss/layout/form';
 @forward './scss/layout/grid';

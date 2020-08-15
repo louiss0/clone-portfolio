@@ -1,0 +1,6 @@
+mixin icons()
+    ul.social-icons
+        for icon in [{link:"https://behance.com", text:"behance"},{link:"https://facebook.com", text:"facebook"},{link:"https://linkedin.com", text:"linkedin"},{link:"https://squarespace.com", text:"squarespace"},{link:"https://instagram.com", text:"instagram"}]
+            li
+                a.social-icon
+                    i(class=`fab fa-${icon.text}`, href=icon.link)

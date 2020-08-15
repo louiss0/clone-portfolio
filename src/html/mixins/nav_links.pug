@@ -1,0 +1,11 @@
+
+
+mixin navLinks(linksCss, linkCss)
+    ul(class=linksCss)
+        for link in ['home', 'about', 'projects','contact']
+            if link == 'home' 
+                li
+                    a(class=linkCss href="./index.pug") #{link}
+            else
+                li
+                    a(class=linkCss href=`./${link}.pug`) #{link}

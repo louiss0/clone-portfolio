@@ -1,2 +1,17 @@
 extends html/layout.pug
+include html/mixins/nav_links.pug
+include html/mixins/icons.pug
 append content
+    nav.nav#nav
+        .nav-center
+            header.nav-header
+                img.nav-logo(src="./assets/images/logo.svg", alt="John Doe")
+                button.nav-btn#nav-btn
+                    i.fas.fa-bars
+            +navLinks("nav-links", "nav-link")
+    aside#sidebar.sidebar
+        div
+            button.close-btn#close-btn
+                i.fas.fa-times
+            +navLinks("sidebar-links", "sidebar-link")
+            +icons()
